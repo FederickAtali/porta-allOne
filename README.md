@@ -23,7 +23,7 @@ MYSQL
 -The sendmail.php files need to be adjusted with respect to the users hosting information.
 
 
-#The images below is websites on different screen sizes.This code i responsive and mobile first.
+#The images below shows the code  on different screen sizes.This code is responsive and mobile first.
 
 ![small size screen](image.png)
 
