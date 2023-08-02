@@ -1,6 +1,6 @@
          #Example Code of a Simple  Responsive Portfolio Websites
 
-This is a simeple full stack portfolio websites code which is mobile first.
+This is a simple full stack portfolio websites code which is mobile first.
 
 Laguages used:
 PHP
