@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My recent blog page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!--Bootstrap link code-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap icon link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!--font awesome link-->
+    <script
+      src="https://kit.fontawesome.com/ba97a1ec2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navbars section-->
+    <nav class="port navbar navbar-expand-md py-4 fixed-top">
+      <div class="container d-flex" id="containerlog">
+        <a class="haoao" href="index.php" class="navbar-brand logam2"> TIKU</a>
+        <!--Hamburger button.-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="port2 navbar-nav ms-auto d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#aboutme1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicesid">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#portfoliosec">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portblog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactsec">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--first blog section-->
+    <section class="recentblog py-5" id="myBlog">
+      <div class="container py-5" id="allBlog-sec">
+        <h2 class="main-head">Submitting Html Forms To Google sheets</h2>
+
+          <blockquote class="blockquote-reverse backqot1 text-center p-5">
+           <p>  "Many of life's failures are people who did not 
+            <br> realize how close they were to success when they gave up" </p> 
+           <footer> -Thomas Edison</footer> 
+          </blockquote>    
+        <p class="text-center">
+          Some times we may choose not to undergo all the various steps and tedious
+          processes of storing our form data to a database. To escape from that
+          and still have our form data securly stored, we can use google sheet
+          to do that.In this blog, we will walk through the steps from creating
+          an html form to storing the the form input data to a google sheet.
+        </p>
+        <p>
+          Click on the links below to jump to a particular section of the blog
+        </p>
+        <ul class="blog-links">
+          <a href="#create-form "> <li>Creating an html form</li> </a>
+          <a href="#google-sheet"> <li>Setting up a google sheeet</li> </a>
+          <a href="#create-googl-app"> <li>Creating a google app script</li></a>
+          <a href="#ru-ini">
+            <li>Running the initial setup function of google app script</li></a
+          >
+          <a href="#adding-triggers">
+            <li>Adding some trigger of the google app script</li></a
+          >
+          <a href="#deploy"> <li>Deploy the project</li></a>
+          
+          <a href="#form-config2"> <li>Html form configuration</li></a>
+        </ul>
+
+        <!---creating an html form-->
+        <div class="creating-form py-5" id="create-form">
+          <h3 class="main-head">Creating an html form</h3>
+          <p class="text-center py-3">
+            Firstly, we need to create a project folder in file explorer then use
+            any text editor of our choice and open the folder.While at the open
+            folder in text editor, create a file called index.html or name it
+            any name you want but with the html ending.Below is a simple form
+            with two input fields and a submit button.
+          </p>
+          <img
+            src="image/form-image1.png"
+            alt="image of html form"
+            class="form1alll img-fluid"
+          />
+        </div>
+
+        <!--Setting up a google sheet.-->
+        <div class="google-sheet py-5" id="google-sheet">
+          <h3 class="main-head">Setting up a google sheet</h3>
+          <ol class="olsheet">
+            <li>
+              lets us go to
+              <a
+                href="https://docs.google.com/spreadsheets/u/0/"
+                target="_blank"
+                >google sheet</a
+              >
+              and create a new sheet
+            </li>
+            <li>
+              Make sure the header of the sheet correspond to the number of
+              input fields in the form with exact name and spellings
+            </li>
+          </ol>
+          <p>
+            The video below creates a google sheet with the header names
+            having thesame spellings as the form above
+          </p>
+          <video src="videos/form1-sheet.mp4" width="100%" controls></video>
+        </div>
+        <!--Creatig a google apple scripst-->
+        <div id="create-googl-app" class="google-app py-5"></div>
+        <h3 class="main-head">Creating a google app script</h3>
+        <p>
+          On your own screen on the above video, click on extensions &rarr; App
+          scripts.A new google scripts will be opened.Give it a suitable name.
+        </p>
+        <img
+          src="image/appsc2.png"
+          alt="image demonstrating creating app scripts"
+          class="appscrpst1 img-fluid"
+        />
+        <p>
+          After giving the script a name, replace the default function on the
+          scripts with the code on the video below
+        </p>
+        <video src="videos/formsheet-video2.mp4" width="100%" controls></video>
+        <p>
+          Make sure to save the code before proceeding to
+          <a href="#ru-ini">Running the initial setup</a>
+        </p>
+
+        <!--Running the initial setup-->
+        <div id="ru-ini" class="run-initia py-5">
+          <h3 class="main-head">Running the initial Setup</h3>
+
+          <p>
+            Ones you press the run button in the App script interface, a pop-up
+            box will show up for you to review permission.Click the review
+            permission button to get to the next screen.Since the scripts has
+            not been reviewed by google, it will generate a warning message.It is required
+            to click "Go to form12(unsafe)"(form12 will be change to your own 
+            script name) for the script to have the right
+            permission to update your form
+          </p>
+          <img
+            src="image/initial1.png"
+            alt="giving the scripts the right permission"
+            class="initial-per img-fluid"
+          />
+          <p>
+            Ones you have given your form the right permission,the following
+            output will be seen on the screen
+          </p>
+          <img
+            src="image/initial2.png"
+            alt="image showing successfull execution of scripts"
+            class="initial3 img-fluid"
+          />
+          <p>
+            At this point your script is having the right permission to continue
+            to the next step
+          </p>
+        </div>
+        <!--adding trigger for the scripts-->
+        <div id="adding-triggers" class="triggers1 py-5">
+          <h3 class="main-head">Adding a trigger for the scripts</h3>
+          <img
+            src="image/trigers1.png"
+            alt="adding triggers for scripts"
+            class="add-triggers img-fluid "
+          />
+          <p class="text-center"></p>
+            Ones trigger is click from the window above, select Add triggers on
+            the sidebars.<br>Then you select the following from the window that
+            appear.
+          </p>
+          <ul>
+            <li>Choose which to run</li>
+            <p>doPost</p>
+            <li>Choose which deployment should run</li>
+            <p>Head</p>
+            <li>Select event source</li>
+            <p>From spreadsheet</p>
+            <li>Select event type</li>
+            <p>On from Submit</p>
+          </ul>
+          <img src="image/trigger32.png" 
+          alt="selecting triggers" 
+          class="deploy-pro img-fluid">
+          <p>When you are done with that, select save</p>
+        </div>
+
+        <!--Deploy the project-->
+        <div class="deploy py-5" id="deploy">
+          <h3 class="main-head">Deploy the project</h3>
+          <p>At this point your project is ready to be published.</p>
+          <img
+            src="image/deploy.png"
+            alt="deployment screen"
+            class="deployment img-fluid"
+          />
+          <p class="text-center"></p>
+            As it is in the screen above, on your own screen, 
+              open the deploy button and select new deployment
+            from the the dropdown list.Click the select type button , then
+            select web app
+          </p>
+          <p>
+            On the next window, fill in the fields as shown on the screen below
+          </p>
+          <img
+            src="image/deploy-me.png"
+            alt="image showing deployment button"
+            class="deploymenr-me img-fluid"
+          />
+          <p>
+            You can write anything in the "new description" section.Click the
+            deploy button.
+          </p>
+          <p>
+            Note: Before moving to the next step , copy and save the wep app URL
+          </p>
+        </div>
+        <!--Hmtl Form Configuration.-->
+        <div class="form-config py-5" id="form-config2">
+          <h3 class="main-head">Html form configuration</h3>
+          <p class="text-center">Let us go back to the form we created and add the action and 
+            Method attribute.The value of the action attribute will be the 
+            URL we copied from deploying our App scripts.Use the url you copied, then 
+            paste in the action attribute as shown in the image below
+          </p>
+          <img src="image/app-url.png" 
+          alt="app url"
+          class="ulr img-fluid">
+          <p class="text-center">When users from any location submit this form, 
+            the data will be shown on the google sheet we created.
+            See my own google sheet below, when I enterred the form input field
+             and submitted the data</p>
+             <img src="image/succeess-submission.png" 
+             alt="showing form successfully submitted"
+             class="success-form img-fluid">
+             <p class="text-center">Note:The google sheet
+              is case sensitive,so the sheet header should be spelled same as 
+              the form input  name attribute values
+             </p>
+
+             <h5 class="we-haver">We have reach to the end of this blog.
+              I thank you for reading through</h5>
+             <p>I draw my inspiration to write this blog from the below articles and
+              projects.A big Thanks to them
+             </p>
+             <ul>
+            
+        
+              <li> https://github.com/levinunnink/html-form-to-google-sheet </li>
+              <li>https://github.com/jamiewilson/form-to-google-sheets</li>
+
+             </ul>
+
+
+        </div>
+
+        <blockquote class="blockquote-reverse backqot1 text-center">
+          <p>  "Masters today were starters yesterday, so begin now." </p> 
+          <footer> -Bernard Kelvin Clive</footer> 
+         </blockquote> 
+      </div>
+    </section>
+
+
+    <!--Contact section-->
+    <section class="contact1 py-5" id="contactsec">
+      <div class="container" id="contactport">
+        <div class="row">
+          <div class="contactme-left">
+            <h1 class="hme">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>federicktiku163@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+971582639255</p>
+            <div class="social-links">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://wa.me/971582639255" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="mailto:federicktiku163@gmail.com" target="_blank">
+                <i id="solifa" class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <a
+              href="image/HSE Cover2 letters.pdf"
+              download
+              id="btn2"
+              class="btn"
+              >Download Cv</a
+            >
+          </div>
+          <div class="contact-right" id="popup">
+            <form
+              method="POST"
+              action=""
+              class="formon11"
+              id="portfolioForm portfolioForm2"
+            >
+              <div>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  name="Message"
+                  id="write-here"
+                  rows="6"
+                  placeholder="Your Message"
+                >
+  Please clear this text and write your message...
+                  </textarea
+                >
+              </div>
+              <button name="powerBut" id="btn2" class="btn" type="submit">
+                Submit
+              </button>
+            </form>
+            <!--Setting sucess message in our form-->
+            <span id="mesage-success"
+              >Thank you for your message, I will get to you shortly!</span
+            >
+          </div>
+        </div>
+        <p id="compyry">
+          Copyright&copy; All right reserved 2022-<?php echo date("Y"); ?>
+          by Federick Tiku,<br />
+          I developed and designed websites with
+          <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </section>
+
+    <!--Bootstrap  scripts code-->
+    <!--Bootstrap scripts-->
+    <script src="scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <!--javascript file goes here-->
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

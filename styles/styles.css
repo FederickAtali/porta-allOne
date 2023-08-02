@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+ 
+}
+
+body{
+     /** Setting the scroll behavior */
+     scroll-behavior: smooth;
+}
+
+
+
+
+/** Adding image */
+
+.port2  li{
+    padding-left:  10px;
+    padding-right: 10px;
+    list-style-type: none;
+   
+   
+
+   
+}
+
+.REDTI{
+    color: red;
+}
+.fundoing{
+    margin-left: 20%;
+    font-weight: 200;
+    color: gray;
+    font-size: larger;
+    margin-top: 20px;
+
+}
+
+.techwrite{
+ margin-left: 10%;
+ font-weight: 1000;
+}
+
+#textimage{
+    flex-basis: 35%;
+}
+  
+#image{
+ flex-basis: 60%;
+}
+
+#containerlog{
+    align-items: center;
+     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.port2 a{
+    text-decoration: none;
+    
+    font-weight: 600;
+    font-size: 18px ;
+    color: black;
+}
+/**
+.port {
+    background-color: rgb(0, 98, 130) 
+}
+*/
+/* Adding some hover effect*/
+
+
+
+.span1{
+    color: red;
+}
+
+.firstsec,.ack{
+   
+    display: flex;
+    z-index: 2;
+    top: 20px;
+    margin-top: 15%;
+}
+
+
+.imageone{
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.text1{
+    
+    font-size: 15px;
+}
+
+.texth31{
+    
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*import need here because of conflicting css property 
+in the nav class port**/
+.logam2{
+     color: #ff004f !important;
+    text-decoration: none;
+    font-size: 40px !important;
+    font-weight: 700 !important;
+}
+
+.haoao{
+    color:rgb(0, 98, 130);
+    font-weight: 900;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.port ul li a{
+    position: relative;
+}
+
+/** red lines under the nav bars items.The line will hide by default */
+.port ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(0, 98, 130) ;
+    position: absolute;
+    left: 0;
+    bottom: -0.9px;
+    transition: 0.5s;
+}
+
+
+/** on hover towards the nav bar items, the line will be shown */
+.port ul li a:hover::after{
+    width: 100%;
+}
+
+
+/** styling for about section */
+
+.aboutme{
+    margin-left: 10%;
+}
+    
+.tab-title {
+    margin-bottom: 10px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.changeme1{
+    border-radius: 10px;
+}
+
+/** adding underline property in our tablinks */
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(0, 128, 130) ;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+ .tab-links.active-link::after{
+width: 100%;
+ }
+
+ .tab-contents ul li{
+    list-style: none;
+   
+   
+ 
+   
+
+ }
+
+ .tab-contents ul li span{
+  
+    font-size: 14px;
+   
+ }
+ 
+ .tab-contents{
+   display: none;
+ }
+
+ .tab-contents.active-tab{
+    display: block;
+ }
+
+
+/** Services section styling*/
+.sub-title{
+   font-weight: bold;
+   margin-left: 35%;
+}
+
+.webcolgrid{
+    font-weight: bold;
+}
+
+.goo{
+   color: blue;
+}
+/* stying the column boxes*/
+#second-col{
+    background-color: rgb(0, 98, 130);
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: white;
+    border-style: solid;
+    margin-left: 5px;
+    transition: transform .2s; /** tranform time */
+}
+/** zoom out on hover*/
+#second-col:hover{
+    background-color: rgb(0, 128, 130);
+
+     transform: scale(1.2);
+  
+    
+}
+#second-col i{
+    color: white;
+}
+
+#rowgrid i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/**---------------- Styling the portfolio section ---------------*/
+
+/**
+.porfoliome{
+background: linear-gradient(
+to right,
+indigo 0%,
+indigo 50%,
+azure 50%,
+azure 100%
+
+);
+}
+
+*/
+
+
+#classall{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+  
+}
+
+
+.myw{
+    margin-left: 35%;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+
+#layer a{
+    border-style:none;
+    color:red;
+    border-radius: 50%;
+    padding: 10px;
+    border-color: gray;
+    border-width: 1px;
+    background-color:rgb(0, 98, 130);
+    box-shadow: 0px 2.98256px  7.98564px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+   
+}
+
+#layer a:hover{
+    background-color: rgb(0, 128, 130);
+  
+}
+
+#text-body-secondary{
+    margin-top: 30px;
+}
+
+
+/**-----------------------Contact-----------------------**/
+.contactme-left{
+    flex-basis: 35%;
+   
+}
+
+.contact-right{
+    flex-basis: 65%;
+    
+}
+.contactme-left p i{
+    margin-right: 7px;
+    font-size: 20px;
+    color: white;
+}
+
+.contact1{
+    background-color: rgb(0, 98, 130); 
+}
+
+.contactme-left p{
+    color: white;
+}
+
+.hme{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.social-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+
+    
+    
+}
+
+.anmam{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+::placeholder{
+    color: white;
+}
+#solifa{
+    color: white;
+}
+
+#solifa:hover{
+    color: rgba(0, 128, 130);
+}
+.social-links a:hover{
+    color: rgb(0, 128, 130);
+    transform: translateY(-6px);
+}
+
+#btn2{
+    background: rgb(0, 128, 130);
+    color: white;
+    margin-top: 6%;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 150px;
+   
+}
+
+
+.formon11{
+    width: 100%;
+
+}
+
+
+.formon11 input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(0, 128, 130);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.formon11 #btn2{
+    padding: 10px 10px;
+    font-size: 18px;
+    margin-top:  20px;
+    cursor:pointer;
+    width: 150px;
+}
+
+.formon11 #btn2:hover{
+    background-color: black;
+}
+
+#compyry{
+    width: 100%;
+    color: white;
+    margin-top: 8%;
+   
+  
+    padding: 20px 0;
+  
+    font-weight: 300;
+   
+}
+
+#compyry i{
+    color: red;
+}
+
+.port .fa-solid{
+    display: none;
+}
+/**-----CSS for small screen-----*/
+@media only screen and (max-width:600px){
+
+    .port .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    .dereasin{
+        margin-left: 5%;
+    }
+
+    .contactme-left, .contact-right{
+        flex-basis: 100%;
+    }
+    
+    #firstcontain{
+        flex-basis: 100%;
+    }
+}
+
+/***----------------------------css for hello succes sent-----------*/
+#mesage-success{
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+#mesage-success{
+    display: none;
+}
+
+  /** Little introduction about myself. */
+  .peronaal{
+    background-color:rgb(0, 98, 130);
+    color: white;
+
+
+
+  }
+
+  .navbar-light .navbar-toggler-icon{
+background-image: url();
+  }
+  
+/**
+  .dereasin{
+    text-align: center;
+    width: 650px;
+    line-height: 1.8;
+    margin-left: 10%;
+    margin-top: 2%;
+   
+
+  }
+  */
+
+  .navbar-toggler-icon{
+    border-color: red;
+  }
+ 
+  #layer i{
+    color: white !important;
+  }
+
+  #myserallcard{
+   border-color:rgb(0, 98, 130) ;
+  }
+  #myserallcard:hover{
+    border-color: rgb(0, 128, 130);
+  }
+
+  #second-card-gp{
+    margin-top: 2%;
+   
+  }
+  .dereasin{
+    text-align: center;
+  } 
+
+  .whattextme{
+    text-align: center;
+    font-weight: 300;
+     color: gray;
+
+  }
+
+  #services3 a{
+    text-decoration: none;
+  }
+
+  #footerlastup{
+    background-color:rgb(0, 98, 130);
+  
+   
+  }
+  #portfoliosec a{
+    text-decoration: none;
+  }
+
+  .lastup{
+    color: white;
+  }
+ 
+ 
+ #languages{
+    border-color:rgb(0, 98, 130);
+   
+    
+ }
+
+
+ /**
+ #box-shadow{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+ }
+
+*/
+
+/** Styling the languages i speack section */
+#firstpy{
+    margin-top: 50px;
+}
+
+#title-designer{
+    font-weight: 700;
+    
+
+}
+
+ 
+.firstpy2{
+    color:rgb(0, 98, 130) ;
+}
+.firstpy3{
+    line-height: 30px;
+}
+
+#portrecentb a{
+    text-decoration: none;
+}
+.text-rady{
+    font-weight: 100;
+    color: gray;
+}
+
+#startacon{
+   /** background-color: rgb(0, 98, 130) ; */
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#startacon:hover{
+    background-color: rgb(0, 128, 130) ;
+
+}
+.fa-solid{
+    color: black;
+}
+#startacon i {
+    color: white;
+}
+
+#largally{
+    width: 250px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(0, 98, 130);
+    border-style: solid;
+    border-color: rgb(0, 98, 130);
+    border-width: 2px;
+    margin-top: 20px;
+}
+
+#largally i{
+    margin-right: 10px;
+    color:  rgb(0, 98, 130);
+}
+#largally i:hover{
+    color: white;
+}
+
+#largally:hover{
+ background-color: rgb(0, 128, 130);
+ color: white;
+}
+
+#anybody-collabo{
+    margin-top: 20px;
+}
+/**styling the section after navbar*/
+.formagaia, .recentblog {
+    margin-top: 20%;
+    z-index: 2;
+    top: 20px;
+    display: flex;
+}
+
+.recentblog {
+    margin-top: 10% !important;
+}
+
+#fffforn{
+    margin-bottom: 10%;
+}
+
+
+/** Styling for whatsapp container*/
+.float{
+
+    position:fixed;
+    bottom: 30%;
+    right: 20px;
+ 
+    width: 120px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+   
+   
+    
+}
+
+/** Styling the whatsapp itself.*/
+.float2{
+   margin-top: 30px;
+   color:white;
+   background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.whatsappmenow{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.designreps{
+  font-weight: 400;
+  font-size: medium;
+  font-family: sans-serif;
+
+
+}
+
+    
+/**styling the search button*/
+#SEARCH{
+    background-color: rgb(0, 98, 130);
+    color: white;
+}
+#SEARCH:hover{
+    background-color: rgb(0, 128, 130);
+}
+
+#searchamall{
+  border-color: rgb(0, 98, 130);
+  border-width: 2px;
+}
+
+#searchamall:hover{
+    border-color: rgb(0, 128, 130);
+}
+
+
+/** styling the recent blog section */
+.submitgg{
+    margin-left: 20%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.blog-links a{
+ color: rgb(0, 128, 130);
+ text-decoration: none;
+}
+
+
+.blog-links a:hover{
+ text-decoration: underline;
+}
+
+.olsheet a{
+    text-decoration: none;
+}
+
+
+
+#create-form,#create-googl-app,#google-sheet,
+#ru-ini,#adding-triggers,#deploy{
+    margin-top: 5%;
+}
+
+.main-head{
+    margin-left: 20%;
+    color: rgb(0, 128, 130);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.we-haver{
+    margin-top:  5%;
+    font-weight: bold;
+}
+
+#CLICKME{
+    margin-top: 5%;
+}
+
+#CLICKME a{
+    text-decoration: none;
+}
